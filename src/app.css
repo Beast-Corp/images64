@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@layer base {
+  /* Soft, eye-friendly light mode (warm off-white/zinc) */
+  :root {
+    --bg-base: #f7f8f9;
+    --bg-surface: #fdfdfd;
+    --bg-surface-hover: #f1f3f5;
+    --border-soft: #e2e5e9;
+    --text-main: #334155;
+    --text-muted: #64748b;
+  }
+
+  /* Deep, low-contrast dark mode */
+  :root.dark {
+    --bg-base: #0f1115;
+    --bg-surface: #16181d;
+    --bg-surface-hover: #1f2228;
+    --border-soft: #262931;
+    --text-main: #cbd5e1;
+    --text-muted: #94a3b8;
+  }
+
+  body {
+    background-color: var(--bg-base);
+    color: var(--text-main);
+  }
+
+  /* Target all standard scrollbars for a softer look */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--border-soft);
+    border-radius: 4px;
+  }
+}
