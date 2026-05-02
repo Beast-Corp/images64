@@ -50,7 +50,7 @@
 <aside class="w-64 border-r border-[var(--border-soft)] bg-[var(--bg-surface)] flex flex-col h-full shrink-0 transition-colors duration-200">
     <div class="p-4 border-b border-[var(--border-soft)] flex items-center justify-between">
         <div class="flex items-center gap-2">
-            <img src="/logos/icon.png" alt="Images64 Logo" class="w-8 h-8 object-contain drop-shadow-sm select-none" draggable="false" />
+            <img src="/src-tauri/icons/32x32.png" alt="Images64 Logo" class="w-8 h-8 object-contain drop-shadow-sm select-none" draggable="false" />
             <div class="flex flex-col gap-0.5">
                 <span class="font-bold text-lg leading-none text-[var(--text-main)]">Images64</span>
                 {#if totalTabs > 0}

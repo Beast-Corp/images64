@@ -1,0 +1,12 @@
+[Desktop Entry]
+Categories={{categories}}
+Comment={{comment}}
+Exec={{exec}} {{exec_arg}}
+Icon={{icon}}
+Name={{product_name}}
+Terminal={{terminal}}
+Type={{type}}
+{{desktop_file_lines}}
+{{before_run}}
+MimeType={{mime_types}}
+StartupWMClass=com-beastcorp-images64

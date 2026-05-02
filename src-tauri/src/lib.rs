@@ -1,9 +1,3 @@
-// Learn more about Tauri commands at https://tauri.app/develop/calling-rust/
-#[tauri::command]
-fn greet(name: &str) -> String {
-    format!("Hello, {}! You've been greeted from Rust!", name)
-}
-
 use std::fs;
 use base64::{Engine as _, engine::general_purpose::STANDARD};
 use tauri_plugin_clipboard_manager::ClipboardExt;
@@ -135,8 +129,8 @@ pub fn run() {
         .plugin(tauri_plugin_fs::init())
         .plugin(tauri_plugin_opener::init())
         .invoke_handler(tauri::generate_handler![
-            process_base64_string, 
-            read_file_to_base64, 
+            process_base64_string,
+            read_file_to_base64,
             save_base64_to_file,
             copy_to_clipboard,
             get_string_chunk
