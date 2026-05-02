@@ -16,19 +16,19 @@ jobs:
       matrix:
         include:
           - platform: "macos-latest"
-            args: "--target aarch64-apple-darwin --release"
+            args: "--target aarch64-apple-darwin"
             rustTargets: "aarch64-apple-darwin"
           - platform: "macos-latest"
-            args: "--target x86_64-apple-darwin --release"
+            args: "--target x86_64-apple-darwin"
             rustTargets: "x86_64-apple-darwin"
           - platform: "ubuntu-22.04"
-            args: "--release"
+            args: ""
             rustTargets: ""
           - platform: "ubuntu-22.04"
-            args: "--release --bundles appimage"
+            args: "--bundles appimage"
             rustTargets: ""
           - platform: "windows-latest"
-            args: "--release"
+            args: ""
             rustTargets: ""
 
     runs-on: ${{ matrix.platform }}
